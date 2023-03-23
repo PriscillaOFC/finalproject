@@ -11,15 +11,32 @@
  </head>
  <body>
      <header>
-     <h1>Pixies Contact Form</h1>
-     <nav class="topnav" id="myTopnav">
-     <a href="template.html">About Us</a>
-       <a href="services.html">Services</a>
-       <a href="portfolio.html">Portfolio</a>
-       <a href="calendar.html">Event Calendar</a>
-       <a href="contact.php">Contact Us</a>
-       <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
-     </nav>
+     <div id="logo"> <img class="logo" src="images/okpixies.png" height="75px" width="75px" alt="Pixies Logo"></div>
+      <h1>Contact Us</h1>
+     <!-- Trying1 -->
+     <nav>
+      <label for="drop" class="toggle">Menu</label>
+      <input type="checkbox" id="drop" />
+          <ul class="menu">
+              <li><a href="template.html" class="active">About Us</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="calendar.html">Event Calendar</a></li>
+              <li><a href="contact.php">Contac Us</a></li>
+              <li>
+                  <!-- First Tier Drop Down -->
+                  <label for="drop-1" class="toggle">Services</label>
+                  <a href="services.html">Services</a>
+                  <input type="checkbox" id="drop-1"/>
+                  <ul>
+                      <li><a href="#">Weddings</a></li>
+                      <li><a href="#">Baby Showers</a></li>
+                      <li><a href="#">Birthday Parties</a></li>
+                  </ul> 
+
+              </li>
+          </ul>
+      </nav>
+<!-- trying1 -->
      </header>
      
    <div class="wrapper">
@@ -49,7 +66,9 @@
       <p><small>&copy; 2023 by 
           <a href="contact.php">Priscilla Flores</a>, All Rights Reserved ~ 
           <a id="html-checker" href="#">Check HTML</a> ~ 
-          <a id="css-checker" href="#">Check CSS</a></small>
+          <a id="css-checker" href="#">Check CSS</a> ~ 
+          <a id="disclaimer" href="disclaimer.html">Disclaimer</a>
+        </small>
      </p>
     </footer>
   </div>
