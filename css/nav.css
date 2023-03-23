@@ -32,7 +32,7 @@ nav:after {
  * and adding "position:reltive" */
 nav ul {
 	float: right;
-	padding:0;
+	padding:1px;
 	margin:0;
 	list-style: none;
 	position: relative;
@@ -42,7 +42,6 @@ nav ul {
 nav ul li {
 	margin: 0px;
 	display:inline-block;
-	float: left;
 	background-color: lightpink;
 	}
 
@@ -67,9 +66,7 @@ nav a:hover {
  * and giving it a position of absolute */
 nav ul ul {
 	display: none;
-	position: absolute; 
-	/* has to be the same number as the "line-height" of "nav a" */
-	top: 60px; 
+	position: absolute;  
 }
 	
 /* Display Dropdowns on Hover */
@@ -96,10 +93,6 @@ nav ul ul ul li {
 	left:170px; 
 }
 
-	
-/* Change ' +' in order to change the Dropdown symbol */
-li > a:after { content:  ' +'; }
-li > a:only-child:after { content: ''; }
 
 
 /* Media Queries
@@ -129,7 +122,7 @@ li > a:only-child:after { content: ''; }
 	/* Stylinf the toggle lable */
 	.toggle {
 		display: block;
-		background-color: #254441;
+		background-color: lightpink;
 		padding:14px 20px;	
 		color:#FFF;
 		font-size:17px;
