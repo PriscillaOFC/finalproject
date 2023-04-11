@@ -140,12 +140,13 @@ nav ul ul ul li {
 	}
 
 	/* Change menu item's width to 100% */
-	nav ul li {
-		[id^=drop]:checked + ul {
-			display: block;
-			width: 100%;
-			}
+	@media (max-width: 768px) {
+
+	[id^=drop]:checked + ul {
+	display: block;
+	width: 100%;
 	}
+}
 
 	nav ul ul .toggle,
 	nav ul ul a {
@@ -201,7 +202,7 @@ nav ul ul ul li {
 
 	}
 
-}
+
 
 @media all and (max-width : 330px) {
 
@@ -236,4 +237,5 @@ nav ul ul ul li {
     .topnav {
         width: 100%;
     }
+}
 }
